@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: grey;
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="basicexamples.js"></script>
+    </head>
+    <body>
+        <h1>Basic Observable Examples</h1>
+        Mouse coords, turns red if x>400:
+        <p id="pos">
+            0,0
+        </p>
+        <hr>
+        <p>Rectangle animated for 1 second:</p>
+        <svg id="animatedRect" width="600" height="600"/>
+        <hr>
+        <p>A draggable rectangle:</p>
+        <svg id="dragRect" width="600" height="600"/>
+        <hr>
+        <p>You can draw rectangles:</p>
+        <svg id="drawRects" width="600" height="600"/>
+        <hr>
+        <p>You can draw rectangles and drag them around:</p>
+        <svg id="drawAndDragRects" width="600" height="600"/>
+    </body>
+</html>

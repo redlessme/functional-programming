@@ -1,0 +1,180 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-11 03:55:45.845604 UTC
+
+interface haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4:Monad 8022
+  interface hash: 81731756c8607c5c3e3f7b6bf6227466
+  ABI hash: e2faa16d56981bf642daac0ce4482481
+  export-list hash: 6ee886d342d11e9e096b3601aecca342
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bd29246931572356afdc42a66f13eebb
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Monad.<*>
+  Monad.<=<
+  Monad.>>=
+  Monad.foldM
+  Monad.join
+  Monad.Monad{Monad.=<<}
+module dependencies: Applicative Base Functions Functor
+package dependencies: base-4.10.1.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  Applicative 6f38f2b68150346c7ad83f48e33d0f3a
+  exports: 68b0a1c6874d8488a06eeaa957564063
+  Applicative 5d23c9bd84288312c6b6346bc51d2b30
+import  -/  Base f77c586a65fe4dae05a96b26d4a1ae4f
+  exports: cb0045a457cc1d524a71f6b3762d54c0
+import  -/  Functions d62ddeaa44a3ab3ab6cd3b0bb72ec7a8
+  exports: 7dd1dfeda93edcd4bf6a2a423cb49185
+  flatten e9ea91ee845ff59d7c121ed0683550c2
+  map 2051f84ac484a4ee5e6b38bd2f3e5fd7
+import  -/  Functor 8c9db5f0e8cc075aac6808e26a659a17
+  exports: 25365b16bb2390e97612c086388f5ba1
+  <$> c1a54d3e0f34c5b400dffecce8353271
+fixities infixl 4 <*>, infixr 1 <=<, infixr 1 =<<
+f3cb113cb0f6c1fc4c78e94af96f5943
+  $fMonadMaybe :: Monad.Monad GHC.Base.Maybe
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Base.Maybe
+                  Applicative.$fApplicativeMaybe
+                  Monad.$fMonadMaybe_$c=<< -}
+7edb6e00dfcae7bc6c23a8998796577e
+  $fMonadMaybe_$c=<< ::
+    (a -> GHC.Base.Maybe b) -> GHC.Base.Maybe a -> GHC.Base.Maybe b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> GHC.Base.Maybe b) (ds :: GHC.Base.Maybe a) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ b
+                   GHC.Base.Just x -> f x }) -}
+f3cb113cb0f6c1fc4c78e94af96f5943
+  $fMonad[] :: Monad.Monad []
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ [] Applicative.$fApplicative[] Monad.$fMonad[]_$c=<< -}
+a65d61033c534ca4ab3bfdde77c8f818
+  $fMonad[]_$c=<< :: (a -> [b]) -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> [b]) (xs :: [a]) ->
+                 Functions.flatten @ b (Functions.map @ a @ [b] f xs)) -}
+e97df148a359b33826ce5433f7a2c920
+  $tcMonad :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15794542526836597340##
+                   15315164756522636099##
+                   Monad.$trModule
+                   Monad.$tcMonad2
+                   0#
+                   Monad.$tcMonad1) -}
+05283c8a0d469ab319d5b98e9eb248cb
+  $tcMonad1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+290f8e890be264ac09e341dabc490a46
+  $tcMonad2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Monad.$tcMonad3) -}
+2241909113984d534ca4a824f405def8
+  $tcMonad3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Monad"#) -}
+86687ebe298ac0fee4d832a1665de034
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Monad.$trModule1 Monad.$tcMonad2) -}
+9f87a889f310e8e7a478f66a96882a15
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Monad.$trModule2) -}
+98f666a3f002d1843098a53d1c5683b1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4"#) -}
+3eb13de8a906ad3fcc05d7e9d11fe9ef
+  (<*>) :: a
+  {- Strictness: x -}
+45176fb7b2d7b9bb9d48e22bc940a10b
+  (<=<) :: Monad.Monad f => (a -> f b) -> (t -> f a) -> t -> f b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))),1*U(A,1*C1(C1(U)))><L,U><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   @ t
+                   ($dMonad :: Monad.Monad f)
+                   (f1 :: a -> f b)
+                   (g :: t -> f a)
+                   (a1 :: t) ->
+                 Monad.=<< @ f $dMonad @ a @ b f1 (g a1)) -}
+4ba960657bca8c9d14184c5234ff6715
+  (>>=) :: Monad.Monad m => m a1 -> (a1 -> m a2) -> m a2
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LC(C(S))),U(1*U(1*C1(C1(U)),A,A),1*C1(C1(U)))><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ m :: * -> *
+                   @ a
+                   @ a1
+                   ($dMonad :: Monad.Monad m)
+                   (eta :: m a)
+                   (eta1 :: a -> m a1) ->
+                 Monad.=<<
+                   @ m
+                   $dMonad
+                   @ (m a1)
+                   @ a1
+                   (Monad.>>=1 @ m @ a1)
+                   ((Applicative.$p1Applicative @ m (Monad.$p1Monad @ m $dMonad))
+                      `cast`
+                    (Functor.N:Functor[0] <m>_N)
+                      @ a
+                      @ (m a1)
+                      eta1
+                      eta)) -}
+0bfb261e9cc2c8815a2e3cbbd8da39e8
+  >>=1 :: m a -> m a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ m :: * -> * @ a (ma :: m a) -> ma) -}
+f3cb113cb0f6c1fc4c78e94af96f5943
+  class Applicative.Applicative f => Monad (f :: * -> *) where
+    (=<<) :: (a -> f b) -> f a -> f b
+    {-# MINIMAL (=<<) #-}
+801bc5e5606d47949e1231d4ca2d4893
+  foldM :: Monad.Monad m => (a -> b -> m a) -> a -> [b] -> m a
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ m :: * -> * @ a @ b ($dMonad :: Monad.Monad m) ->
+                 Monad.foldM1 @ b @ m @ a) -}
+ac7a0e768a682e9a39e9313497f76aae
+  foldM1 :: (a -> b -> m a) -> a -> [b] -> m a
+  {- Strictness: x -}
+4d2bebc14c0550302b2ef466fcea86d9
+  join :: Monad.Monad m => m (m a) -> m a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LC(S)),1*U(A,1*C1(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ m :: * -> * @ a ($dMonad :: Monad.Monad m) ->
+                 Monad.=<< @ m $dMonad @ (m a) @ a (Monad.>>=1 @ m @ a)) -}
+instance [safe] Monad.Monad [GHC.Base.Maybe] = Monad.$fMonadMaybe
+instance [safe] Monad.Monad [[]] = Monad.$fMonad[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

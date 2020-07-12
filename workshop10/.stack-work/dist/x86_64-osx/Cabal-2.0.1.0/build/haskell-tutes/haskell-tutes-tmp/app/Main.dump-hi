@@ -1,0 +1,69 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-11 03:55:46.792087 UTC
+
+interface main:Main 8022
+  interface hash: 4ff9df6cda252ab2e2b591d3a7cb6ac8
+  ABI hash: d3d9359be62d842ac231a04d5fdd32fc
+  export-list hash: 591dd29e220b3b21401e6f3f37ddd86e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 23850a83bb2bb138350f2f90040a1bed
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: base-4.10.1.0 ghc-prim-0.5.1.1
+                      haskell-tutes-0.1.0.0 integer-gmp-1.0.1.0
+orphans: haskell-tutes-0.1.0.0:Support base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:System.Environment c9f912affeed5beb387a8c5d2b2c6102
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  haskell-tutes-0.1.0.0:Base f77c586a65fe4dae05a96b26d4a1ae4f
+import  -/  haskell-tutes-0.1.0.0:FileIO 151b1fd7b1fdb80e816d2612f81902b8
+import  -/  haskell-tutes-0.1.0.0:Monad e2faa16d56981bf642daac0ce4482481
+import  -/  haskell-tutes-0.1.0.0:Support 6b3ecfab7f5884cabfcfbbb4b7abca4d
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+93e486e9681e303e38adb19cb6100db1
+  main :: GHC.Types.IO ()
+  {- Strictness: x -}
+a18f882fa5d06cbba87c34e1de235d4c
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1 @ () Main.main) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,283 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-11 03:55:46.107834 UTC
+
+interface haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4:FileIO 8022
+  interface hash: 60088c04929ea704f15c139910de77a8
+  ABI hash: 151b1fd7b1fdb80e816d2612f81902b8
+  export-list hash: e4f4fcaabac524927677fbb843d53fbf
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bd29246931572356afdc42a66f13eebb
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  FileIO.<$
+  FileIO.getFile
+  FileIO.getFiles
+  FileIO.printFile
+  FileIO.printFiles
+  FileIO.run
+  FileIO.void
+module dependencies: Applicative Base Functions Functor Monad
+                     Support
+package dependencies: base-4.10.1.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4:Support
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:System.IO 525805ab19df5e4fe6d8de7dde9cb909
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Applicative 6f38f2b68150346c7ad83f48e33d0f3a
+  exports: 68b0a1c6874d8488a06eeaa957564063
+  sequence 51e08ac82315086d287d91e36df54883
+import  -/  Base f77c586a65fe4dae05a96b26d4a1ae4f
+  exports: cb0045a457cc1d524a71f6b3762d54c0
+import  -/  Functions d62ddeaa44a3ab3ab6cd3b0bb72ec7a8
+  exports: 7dd1dfeda93edcd4bf6a2a423cb49185
+  ++ a9d1f44da37669483afcb7c07739db76
+  map 2051f84ac484a4ee5e6b38bd2f3e5fd7
+import  -/  Functor 8c9db5f0e8cc075aac6808e26a659a17
+  exports: 25365b16bb2390e97612c086388f5ba1
+  <$> c1a54d3e0f34c5b400dffecce8353271
+  Functor 317494c2b0d5fdecc98bb826bd3446ae
+import  -/  Monad e2faa16d56981bf642daac0ce4482481
+  exports: 6ee886d342d11e9e096b3601aecca342
+  >>= 4ba960657bca8c9d14184c5234ff6715
+import  -/  Support 6b3ecfab7f5884cabfcfbbb4b7abca4d
+  exports: e8401888e44c688b3e1eaae611def5fc
+2f3fbb45b8e55048fbd6502fa83a98ca
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   FileIO.$trModule3
+                   FileIO.$trModule1) -}
+bf5d8f7ae9c5ca869c69476d37c40393
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileIO.$trModule2) -}
+a6c0f9867a312b69bff0b0c110128f20
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FileIO"#) -}
+30e377d67dc4f7bdfcdab813372e5b70
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS FileIO.$trModule4) -}
+89ed0b4d26203f623ed290a3a48720cf
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4"#) -}
+14db58cc1bed5b366c9e9c89b1e76fed
+  $wprintFile ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.IO.FilePath)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.FD.openFile1
+                        ww
+                        GHC.IO.IOMode.ReadMode
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.CString.unpackAppendCString# FileIO.printFile2 ipv3)
+                   GHC.Types.True
+                   ipv2 } }) -}
+f6fa8afa3f668329960305d6fc2a3954
+  (<$) :: Functor.Functor f => a -> f b -> f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(S)),1*C1(C1(U))><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   ($dFunctor :: Functor.Functor f)
+                   (a1 :: a)
+                   (b1 :: f b) ->
+                 $dFunctor `cast` (Functor.N:Functor[0] <f>_N)
+                   @ b
+                   @ a
+                   (\ (ds :: b) -> a1)
+                   b1) -}
+bfadbcaf4032cb3fb88509e35119e2e5
+  getFile ::
+    GHC.IO.FilePath -> GHC.Types.IO (GHC.IO.FilePath, GHC.Base.String)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileIO.getFile1
+                  `cast`
+                (<GHC.IO.FilePath>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <(GHC.IO.FilePath, GHC.Base.String)>_R)) -}
+04ba246663d44fe74e5123f43c599c6e
+  getFile1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          (GHC.IO.FilePath, GHC.Base.String) #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (f :: GHC.IO.FilePath)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.FD.openFile1
+                        f
+                        GHC.IO.IOMode.ReadMode
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2, (f, ipv3) #) } }) -}
+d79f96c411e2298e363ca496c3cbabac
+  getFiles ::
+    [GHC.IO.FilePath]
+    -> GHC.Types.IO [(GHC.IO.FilePath, GHC.Base.String)]
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileIO.getFiles1
+                  `cast`
+                (<[GHC.IO.FilePath]>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <[(GHC.IO.FilePath, GHC.Base.String)]>_R)) -}
+d683d6caec23360cc4ca91115c4d7c82
+  getFiles1 ::
+    [GHC.IO.FilePath]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.IO.FilePath, GHC.Base.String)] #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (lis :: [GHC.IO.FilePath]) ->
+                 FileIO.getFiles2 (FileIO.getFiles_go lis)) -}
+6455b5957a49162a88ad9f73fbb8e780
+  getFiles2 ::
+    [GHC.Types.IO (GHC.IO.FilePath, GHC.Base.String)]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [(GHC.IO.FilePath, GHC.Base.String)] #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U> -}
+19710b3d228e1e7098fc953d8932b47c
+  getFiles_go ::
+    [GHC.IO.FilePath]
+    -> [GHC.Types.IO (GHC.IO.FilePath, GHC.Base.String)]
+  {- Arity: 1, Strictness: <S,1*U> -}
+a4d7aa38e8f65dd1347456d67d120195
+  printFile :: (GHC.IO.FilePath, GHC.Base.String) -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,1*U(U,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileIO.printFile1
+                  `cast`
+                (<(GHC.IO.FilePath, GHC.Base.String)>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+3b1ca1313f08c47d5d5e568b901de5c5
+  printFile1 ::
+    (GHC.IO.FilePath, GHC.Base.String)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U(U,A)><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (GHC.IO.FilePath, GHC.Base.String))
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w of ww { (,) ww1 ww2 -> FileIO.$wprintFile ww1 w1 }) -}
+db3745946aded5a70847b7e9312cac7a
+  printFile2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("================"#) -}
+857e1903413eb05963caab15d36d11ae
+  printFiles ::
+    [(GHC.IO.FilePath, GHC.Base.String)] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                FileIO.printFiles1
+                  `cast`
+                (<[(GHC.IO.FilePath, GHC.Base.String)]>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+2ec934b1262df40e00facbecad27e122
+  printFiles1 ::
+    [(GHC.IO.FilePath, GHC.Base.String)]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (lis :: [(GHC.IO.FilePath, GHC.Base.String)]) ->
+                 FileIO.printFiles2) -}
+44463dc3d61374cda8985ab709e6ff83
+  printFiles2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.True) -}
+c7002b35b95cb6c2d777e6e8acb81e7e
+  run :: GHC.IO.FilePath -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileIO.run1
+                  `cast`
+                (<GHC.IO.FilePath>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+75dfed962a2a379bd1a8b05ce32c99d0
+  run1 ::
+    GHC.IO.FilePath
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (p :: GHC.IO.FilePath)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.IO.Handle.FD.openFile1
+                        p
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case FileIO.getFiles2
+                        (FileIO.getFiles_go (Data.OldList.lines ipv3))
+                        ipv2 of ds { (#,#) ipv4 ipv5 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.True
+                   ipv4 } } }) -}
+32bc7f38eed870f3f427912e1d7a0dae
+  void :: GHC.Types.IO a -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S(SL)),1*C1(U(U,A))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                FileIO.void1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Types.IO a>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+a771756878ebe03dad6c35306075f9d7
+  void1 ::
+    GHC.Types.IO a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S(SL)),1*C1(U(U,A))><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (b :: GHC.Types.IO a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case b `cast` (GHC.Types.N:IO[0] <a>_R)
+                        eta of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Tuple.() #) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

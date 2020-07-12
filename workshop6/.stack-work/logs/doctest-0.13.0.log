@@ -1,0 +1,29 @@
+Configuring doctest-0.13.0...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for doctest-0.13.0..
+Building library for doctest-0.13.0..
+[ 1 of 16] Compiling GhcUtil          ( src/GhcUtil.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/GhcUtil.o )
+[ 2 of 16] Compiling Language.Haskell.GhciWrapper ( ghci-wrapper/src/Language/Haskell/GhciWrapper.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Language/Haskell/GhciWrapper.o )
+[ 3 of 16] Compiling Interpreter      ( src/Interpreter.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Interpreter.o )
+[ 4 of 16] Compiling Location         ( src/Location.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Location.o )
+[ 5 of 16] Compiling Paths_doctest    ( .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/autogen/Paths_doctest.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Paths_doctest.o )
+[ 6 of 16] Compiling Options          ( src/Options.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Options.o )
+[ 7 of 16] Compiling Sandbox          ( src/Sandbox.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Sandbox.o )
+[ 8 of 16] Compiling PackageDBs       ( src/PackageDBs.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/PackageDBs.o )
+[ 9 of 16] Compiling Util             ( src/Util.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Util.o )
+[10 of 16] Compiling Extract          ( src/Extract.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Extract.o )
+[11 of 16] Compiling Parse            ( src/Parse.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Parse.o )
+[12 of 16] Compiling Runner.Example   ( src/Runner/Example.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Runner/Example.o )
+[13 of 16] Compiling Property         ( src/Property.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Property.o )
+[14 of 16] Compiling Runner           ( src/Runner.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Runner.o )
+[15 of 16] Compiling Run              ( src/Run.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Run.o )
+[16 of 16] Compiling Test.DocTest     ( src/Test/DocTest.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/Test/DocTest.o )
+Preprocessing executable 'doctest' for doctest-0.13.0..
+Building executable 'doctest' for doctest-0.13.0..
+[1 of 1] Compiling Main             ( driver/Main.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/doctest/doctest-tmp/Main.o )
+Linking .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/doctest/doctest ...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Installing library in /Users/redless/.stack/snapshots/x86_64-osx/lts-11.22/8.2.2/lib/x86_64-osx-ghc-8.2.2/doctest-0.13.0-FhL1bQZiTYWBiul8DyT6Aa
+Installing executable doctest in /Users/redless/.stack/snapshots/x86_64-osx/lts-11.22/8.2.2/bin
+Registering library for doctest-0.13.0..

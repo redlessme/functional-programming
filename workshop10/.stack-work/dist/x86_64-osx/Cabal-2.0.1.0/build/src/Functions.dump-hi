@@ -1,0 +1,151 @@
+
+==================== FINAL INTERFACE ====================
+2018-10-11 03:55:45.442686 UTC
+
+interface haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4:Functions 8022
+  interface hash: 475349ff18096833de38a111833a5d8d
+  ABI hash: d62ddeaa44a3ab3ab6cd3b0bb72ec7a8
+  export-list hash: 7dd1dfeda93edcd4bf6a2a423cb49185
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bd29246931572356afdc42a66f13eebb
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Functions.++
+  Functions.all
+  Functions.any
+  Functions.filter
+  Functions.flatten
+  Functions.length
+  Functions.map
+  Functions.product
+  Functions.sum
+module dependencies: Base
+package dependencies: base-4.10.1.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Base f77c586a65fe4dae05a96b26d4a1ae4f
+  exports: cb0045a457cc1d524a71f6b3762d54c0
+cb567ccaf7b836836d1eea01da90af25
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Functions.$trModule3
+                   Functions.$trModule1) -}
+1eb9f918e6f2398979643cc79ddf0048
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Functions.$trModule2) -}
+763d0fc5f9cd74bb7b87cb83fc158726
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Functions"#) -}
+55ed0c54a1f26d0ee2a72e8df8a07820
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Functions.$trModule4) -}
+e841c5b020b6001e2b0ff3abb22bbe0f
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4"#) -}
+b30d0ae86dbc278cba13c24c20702552
+  $wlength :: [a] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+a9d1f44da37669483afcb7c07739db76
+  (++) :: [a] -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (0, True, True) GHC.Base.++ -}
+4286a2a8c2d259680fb991cde2cd135e
+  all :: [GHC.Types.Bool] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+5da248d0a73bc9497c31e6e8c71bbbb9
+  any :: [GHC.Types.Bool] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+a99b6965936e58110c852273546cfdcc
+  filter :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ a (f :: a -> GHC.Types.Bool) (eta :: [a]) ->
+                 letrec {
+                   go :: [a] -> [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ a
+                       : y ys
+                       -> case f y of wild1 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True -> GHC.Types.: @ a y (go ys) } }
+                 } in
+                 go eta) -}
+e9ea91ee845ff59d7c121ed0683550c2
+  flatten :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+7eb2465aab08a609b3cfb710df07cd0c
+  length :: [a] -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (w :: [a]) ->
+                 case Functions.$wlength @ a w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+2051f84ac484a4ee5e6b38bd2f3e5fd7
+  map :: (a -> b) -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ a @ b (f :: a -> b) (eta :: [a]) ->
+                 letrec {
+                   go :: [a] -> [b] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ b : y ys -> GHC.Types.: @ b (f y) (go ys) }
+                 } in
+                 go eta) -}
+250aa089a65718df5bec3b4ebb85d1cc
+  product :: GHC.Num.Num a => [a] -> a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(A,A,C(C1(U)),A,A,A,1*C1(U))>,
+     Unfolding: (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 let {
+                   z :: a = GHC.Num.fromInteger @ a $dNum Functions.product1
+                 } in
+                 letrec {
+                   go :: [a] -> a {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild { [] -> z : y ys -> GHC.Num.* @ a $dNum y (go ys) }
+                 } in
+                 go) -}
+0f09953acff6d52ebe4734eb22f0a65e
+  product1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+90166b913871aa25d09f07141cdc6bcd
+  sum :: GHC.Num.Num a => [a] -> a
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A,A,A,A,A,1*C1(U))>,
+     Unfolding: (\ @ a ($dNum :: GHC.Num.Num a) ->
+                 let {
+                   z :: a = GHC.Num.fromInteger @ a $dNum Functions.sum1
+                 } in
+                 letrec {
+                   go :: [a] -> a {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [a]) ->
+                     case ds of wild { [] -> z : y ys -> GHC.Num.+ @ a $dNum y (go ys) }
+                 } in
+                 go) -}
+3122b5bb8d75755a804ba53b42ffb09b
+  sum1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

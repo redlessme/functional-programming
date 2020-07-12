@@ -1,0 +1,20 @@
+[1 of 2] Compiling Main             ( /private/var/folders/yv/jjq9bf356qn3221631y_7d640000gn/T/stack12688/ghc-paths-0.1.0.9/Setup.hs, /private/var/folders/yv/jjq9bf356qn3221631y_7d640000gn/T/stack12688/ghc-paths-0.1.0.9/.stack-work/dist/x86_64-osx/Cabal-2.0.1.0/setup/Main.o )
+
+/private/var/folders/yv/jjq9bf356qn3221631y_7d640000gn/T/stack12688/ghc-paths-0.1.0.9/Setup.hs:29:18: warning: [-Wdeprecations]
+    In the use of ‘rawSystemProgramStdoutConf’
+    (imported from Distribution.Simple.Program):
+    Deprecated: "use getDbProgramOutput instead"
+   |
+29 |       libdir_ <- rawSystemProgramStdoutConf (fromFlag (configVerbosity flags))
+   |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2 of 2] Compiling StackSetupShim   ( /Users/redless/.stack/setup-exe-src/setup-shim-mPHDZzAJ.hs, /private/var/folders/yv/jjq9bf356qn3221631y_7d640000gn/T/stack12688/ghc-paths-0.1.0.9/.stack-work/dist/x86_64-osx/Cabal-2.0.1.0/setup/StackSetupShim.o )
+Linking /private/var/folders/yv/jjq9bf356qn3221631y_7d640000gn/T/stack12688/ghc-paths-0.1.0.9/.stack-work/dist/x86_64-osx/Cabal-2.0.1.0/setup/setup ...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Configuring ghc-paths-0.1.0.9...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for ghc-paths-0.1.0.9..
+Building library for ghc-paths-0.1.0.9..
+[1 of 1] Compiling GHC.Paths        ( GHC/Paths.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/GHC/Paths.o )
+Installing library in /Users/redless/.stack/snapshots/x86_64-osx/lts-11.22/8.2.2/lib/x86_64-osx-ghc-8.2.2/ghc-paths-0.1.0.9-jtXMj34IrEDKFvgWnrf0G
+Registering library for ghc-paths-0.1.0.9..

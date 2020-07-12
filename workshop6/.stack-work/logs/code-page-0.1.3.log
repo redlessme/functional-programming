@@ -1,0 +1,8 @@
+Configuring code-page-0.1.3...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for code-page-0.1.3..
+Building library for code-page-0.1.3..
+[1 of 2] Compiling System.IO.CodePage ( src/System/IO/CodePage.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/IO/CodePage.o )
+[2 of 2] Compiling System.Win32.CodePage ( .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/Win32/CodePage.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/Win32/CodePage.o )
+Installing library in /Users/redless/.stack/snapshots/x86_64-osx/lts-11.22/8.2.2/lib/x86_64-osx-ghc-8.2.2/code-page-0.1.3-IgAXwLwH8aZ3hxp3qvXSZY
+Registering library for code-page-0.1.3..

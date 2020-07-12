@@ -1,0 +1,57 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 6fb4eed1e9f32b82cfd696dba26a78029d569b8e0faa832a445e731a6c080d2c
+
+name:           workshop7
+version:        0.0.0
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      Maybes
+      RockPaperScissors
+      SafeList
+  other-modules:
+      Paths_workshop7
+  hs-source-dirs:
+      src/
+  build-depends:
+      Glob >=0.7.14
+    , QuickCheck >=2.8
+    , base >=4.7 && <5
+    , doctest >=0.11
+  default-language: Haskell2010
+
+executable workshop7
+  main-is: Main.hs
+  other-modules:
+      Paths_workshop7
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Glob >=0.7.14
+    , QuickCheck >=2.8
+    , base >=4.7 && <5
+    , doctest >=0.11
+    , workshop7
+  default-language: Haskell2010
+
+test-suite workshop7-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_workshop7
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Glob >=0.7.14
+    , QuickCheck >=2.8
+    , base >=4.7 && <5
+    , doctest >=0.11
+    , workshop7
+  default-language: Haskell2010

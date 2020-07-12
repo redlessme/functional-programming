@@ -1,0 +1,259 @@
+
+==================== FINAL INTERFACE ====================
+2018-09-21 06:18:32.202275 UTC
+
+interface haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4:Applicative 8022
+  interface hash: 1e1ddc9098f8934f29a6025672cd99d9
+  ABI hash: 8e8aa2b41161ecf61cc24a1c7a8e49af
+  export-list hash: 470cadd6c31895a986661b061bd705b4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f4578fe61ad65cb1f88a5bbe0bb412f8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Applicative.<$>
+  Applicative.lift
+  Applicative.sequence
+  Applicative.Applicative{Applicative.<*> Applicative.pure}
+module dependencies: Base Functor
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Base d2893503dd38bfbb4da93eae5958b147
+  exports: 955f29495180f86cf02f4d801a96e205
+  Id dc1e2c42e2ce0d7204c33f2c7b34d684
+  Id b07ecddc6f49e5e8a8209b98cc09cc90
+  Nil 227d10c327c5aaebe7215bf2fa1d1d97
+  Node a9625ccd9711b1864b0d23cbaddf3d30
+  RoseTree dd08530c3824627906cab323e24df302
+import  -/  Functor 9a8f8fea0d41a55b3f0b44b0fb4d7593
+  exports: e073a6812762bf99b65a5933adfba9fe
+  Functor 317494c2b0d5fdecc98bb826bd3446ae
+fixities infixl 4 <*>
+5d23c9bd84288312c6b6346bc51d2b30
+  $fApplicativeId :: Applicative.Applicative Base.Id
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Base.Id
+                  Functor.$fFunctorId_$c<$>
+                    `cast`
+                  (Sym (Functor.N:Functor[0] <Base.Id>_N))
+                  Base.Id
+                  Applicative.$fApplicativeId_$c<*> -}
+b7412df2b9cea9b64cb93feda291d765
+  $fApplicativeId_$c<*> :: Base.Id (a -> b) -> Base.Id a -> Base.Id b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(1*C1(U))><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (ds :: Base.Id (a -> b)) (ds1 :: Base.Id a) ->
+                 case ds of wild { Base.Id f ->
+                 case ds1 of wild1 { Base.Id a1 -> Base.Id @ b (f a1) } }) -}
+5d23c9bd84288312c6b6346bc51d2b30
+  $fApplicativeMaybe :: Applicative.Applicative GHC.Base.Maybe
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ GHC.Base.Maybe
+                  Functor.$fFunctorMaybe_$c<$>
+                    `cast`
+                  (Sym (Functor.N:Functor[0] <GHC.Base.Maybe>_N))
+                  GHC.Base.Just
+                  Applicative.$fApplicativeMaybe_$c<*> -}
+9e226e77d7fd38e9aae80cfdde6a3c74
+  $fApplicativeMaybe_$c<*> ::
+    GHC.Base.Maybe (a -> b) -> GHC.Base.Maybe a -> GHC.Base.Maybe b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   (ds :: GHC.Base.Maybe (a -> b))
+                   (ds1 :: GHC.Base.Maybe a) ->
+                 case ds1 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ b
+                   GHC.Base.Just ipv
+                   -> case ds of wild1 {
+                        GHC.Base.Nothing -> GHC.Base.Nothing @ b
+                        GHC.Base.Just f -> GHC.Base.Just @ b (f ipv) } }) -}
+5d23c9bd84288312c6b6346bc51d2b30
+  $fApplicativeRoseTree :: Applicative.Applicative Base.RoseTree
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Base.RoseTree
+                  Functor.$fFunctorRoseTree_$c<$>
+                    `cast`
+                  (Sym (Functor.N:Functor[0] <Base.RoseTree>_N))
+                  Applicative.$fApplicativeRoseTree_$cpure
+                  Applicative.$fApplicativeRoseTree_$c<*> -}
+f54cb68af515ceb50711cf537a3b3c1c
+  $fApplicativeRoseTree_$c<*> ::
+    Base.RoseTree (a -> b) -> Base.RoseTree a -> Base.RoseTree b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
+8e2c039ea770119797620fd9252c16da
+  $fApplicativeRoseTree_$cpure :: a -> Base.RoseTree a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (a1 :: a) ->
+                 Base.Node @ a a1 (GHC.Types.[] @ (Base.RoseTree a))) -}
+5d23c9bd84288312c6b6346bc51d2b30
+  $fApplicative[] :: Applicative.Applicative []
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ []
+                  Functor.$fFunctor[]_$c<$>
+                    `cast`
+                  (Sym (Functor.N:Functor[0] <[]>_N))
+                  Applicative.$fApplicative[]_$cpure
+                  Applicative.$fApplicative[]_$c<*> -}
+8f01b84495bf5ded0579a84b5276eb8a
+  $fApplicative[]_$c<*> :: [a -> b] -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+1e199b4346cdb0822676280f9f2ea18a
+  $fApplicative[]_$cpure :: a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (a1 :: a) -> GHC.Types.: @ a a1 (GHC.Types.[] @ a)) -}
+0e2a4a1bcf3176d165b14897d1dc7d55
+  $tcApplicative :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13579500604719465066##
+                   5708287848686897874##
+                   Applicative.$trModule
+                   Applicative.$tcApplicative2
+                   0#
+                   Applicative.$tcApplicative1) -}
+87b4cf0a32711947a950f29aa406ffa9
+  $tcApplicative1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+98d9c2b52ad7e7dc771e866360d5fe4f
+  $tcApplicative2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Applicative.$tcApplicative3) -}
+d8f91dabac335d1c1d486ef16bd65b2f
+  $tcApplicative3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Applicative"#) -}
+dce68f1ab42f0c0ecbec44401c669f69
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Applicative.$trModule1
+                   Applicative.$tcApplicative2) -}
+acef958e3d88eb043e98762563334bc0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Applicative.$trModule2) -}
+17cbace119d4c653f6c680b656c8e71f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4"#) -}
+5230cc3998712134418a8f03b1c9c6cc
+  (<$>) :: Applicative.Applicative f => (a -> b) -> f a -> f b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))),U(A,1*C1(U),1*C1(C1(U)))><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   ($dApplicative :: Applicative.Applicative f)
+                   (f1 :: a -> b)
+                   (a1 :: f a) ->
+                 Applicative.<*>
+                   @ f
+                   $dApplicative
+                   @ a
+                   @ b
+                   (Applicative.pure @ f $dApplicative @ (a -> b) f1)
+                   a1) -}
+5d23c9bd84288312c6b6346bc51d2b30
+  class Functor.Functor f => Applicative (f :: * -> *) where
+    pure :: a -> f a
+    (<*>) :: f (a -> b) -> f a -> f b
+    {-# MINIMAL pure, (<*>) #-}
+9beacef2c3e67ae7c9fc62bed625865f
+  lift ::
+    Applicative.Applicative f => (a -> b -> c) -> f a -> f b -> f c
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LLC(C(S))),U(A,1*C1(U),C(C1(U)))><L,U><L,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   @ c
+                   ($dApplicative :: Applicative.Applicative f)
+                   (f1 :: a -> b -> c)
+                   (a1 :: f a)
+                   (b1 :: f b) ->
+                 Applicative.<*>
+                   @ f
+                   $dApplicative
+                   @ b
+                   @ c
+                   (Applicative.<*>
+                      @ f
+                      $dApplicative
+                      @ a
+                      @ (b -> c)
+                      (Applicative.pure @ f $dApplicative @ (a -> b -> c) f1)
+                      a1)
+                   b1) -}
+f7fa8df6ca1b744cdb625253a1566ff3
+  sequence :: Applicative.Applicative f => [f a] -> f [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,C(U),C(C1(U)))>,
+     Unfolding: (\ @ f :: * -> *
+                   @ a
+                   ($dApplicative :: Applicative.Applicative f) ->
+                 let {
+                   z :: f [a]
+                   = Applicative.pure @ f $dApplicative @ [a] (GHC.Types.[] @ a)
+                 } in
+                 let {
+                   lvl :: f (a -> [a] -> [a])
+                   = Applicative.pure
+                       @ f
+                       $dApplicative
+                       @ (a -> [a] -> [a])
+                       (GHC.Types.: @ a)
+                 } in
+                 letrec {
+                   go :: [f a] -> f [a] {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [f a]) ->
+                     case ds of wild {
+                       [] -> z
+                       : y ys
+                       -> Applicative.<*>
+                            @ f
+                            $dApplicative
+                            @ [a]
+                            @ [a]
+                            (Applicative.<*> @ f $dApplicative @ a @ ([a] -> [a]) lvl y)
+                            (go ys) }
+                 } in
+                 go) -}
+instance [safe] Applicative.Applicative [Base.Id]
+  = Applicative.$fApplicativeId
+instance [safe] Applicative.Applicative [GHC.Base.Maybe]
+  = Applicative.$fApplicativeMaybe
+instance [safe] Applicative.Applicative [Base.RoseTree]
+  = Applicative.$fApplicativeRoseTree
+instance [safe] Applicative.Applicative [[]]
+  = Applicative.$fApplicative[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

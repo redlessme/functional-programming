@@ -1,0 +1,205 @@
+
+==================== FINAL INTERFACE ====================
+2018-09-21 06:18:32.386402 UTC
+
+interface haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4:Traversable 8022
+  interface hash: a26d71c3986469decc79645dcf183c5a
+  ABI hash: 9a8d704809b36e99177b068f2995dfc8
+  export-list hash: fbad83eb79803dba259bcb7dad362a49
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: fdb908cb8eac84ac3025d3293511708c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Traversable.Foldable{Traversable.foldMap}
+  Traversable.Traversable{Traversable.traverse}
+module dependencies: Applicative Base Functions Functor
+package dependencies: base-4.10.1.0 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  Applicative 8e8aa2b41161ecf61cc24a1c7a8e49af
+  exports: 470cadd6c31895a986661b061bd705b4
+  Applicative 5d23c9bd84288312c6b6346bc51d2b30
+import  -/  Base d2893503dd38bfbb4da93eae5958b147
+  exports: 955f29495180f86cf02f4d801a96e205
+  RoseTree dd08530c3824627906cab323e24df302
+import  -/  Functions ef63553acd3729853f0c3a60c0ca0031
+  exports: 7dd1dfeda93edcd4bf6a2a423cb49185
+import  -/  Functor 9a8f8fea0d41a55b3f0b44b0fb4d7593
+  exports: e073a6812762bf99b65a5933adfba9fe
+  Functor 317494c2b0d5fdecc98bb826bd3446ae
+9fe4616a0f56288f4cd0f6d697cb1240
+  $fFoldableRoseTree :: Traversable.Foldable Base.RoseTree
+  DFunId
+  {- Arity: 1, Strictness: <B,A>x, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Traversable.$fFoldableRoseTree_$cfoldMap
+                  `cast`
+                (Sym (Traversable.N:Foldable[0] <Base.RoseTree>_N)) -}
+009d08e97a173cc50f46ec166f2b0740
+  $fFoldableRoseTree1 :: (a -> m) -> Base.RoseTree a -> m
+  {- Strictness: x -}
+4efc3a351d9a26cd14a65cb034cbd01d
+  $fFoldableRoseTree_$cfoldMap ::
+    GHC.Base.Monoid m => (a -> m) -> Base.RoseTree a -> m
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ m @ a ($dMonoid :: GHC.Base.Monoid m) ->
+                 Traversable.$fFoldableRoseTree1 @ a @ m) -}
+9fe4616a0f56288f4cd0f6d697cb1240
+  $fFoldable[] :: Traversable.Foldable []
+  DFunId
+  {- Arity: 1, Strictness: <B,A>x, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Traversable.$fFoldable[]_$cfoldMap
+                  `cast`
+                (Sym (Traversable.N:Foldable[0] <[]>_N)) -}
+ac5c9c89757be8c105cff29f592439ad
+  $fFoldable[]1 :: (a -> m) -> [a] -> m
+  {- Strictness: x -}
+a9c2d3c9c0b3067af76c4a7121b0e036
+  $fFoldable[]_$cfoldMap :: GHC.Base.Monoid m => (a -> m) -> [a] -> m
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ m @ a ($dMonoid :: GHC.Base.Monoid m) ->
+                 Traversable.$fFoldable[]1 @ a @ m) -}
+246a16f5ccaa17cdb461dcf5a4c6293e
+  $fTraversableRoseTree :: Traversable.Traversable Base.RoseTree
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Base.RoseTree
+                  Functor.$fFunctorRoseTree_$c<$>
+                    `cast`
+                  (Sym (Functor.N:Functor[0] <Base.RoseTree>_N))
+                  Traversable.$fFoldableRoseTree_$cfoldMap
+                    `cast`
+                  (Sym (Traversable.N:Foldable[0] <Base.RoseTree>_N))
+                  Traversable.$fTraversableRoseTree_$ctraverse -}
+c13dc0de019dcc23bf0cf59f3c768c91
+  $fTraversableRoseTree1 ::
+    (a -> f b) -> Base.RoseTree a -> f (Base.RoseTree b)
+  {- Strictness: x -}
+549a52ca472615b5b7927b1fed1e3f06
+  $fTraversableRoseTree_$ctraverse ::
+    Applicative.Applicative f =>
+    (a -> f b) -> Base.RoseTree a -> f (Base.RoseTree b)
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   ($dApplicative :: Applicative.Applicative f) ->
+                 Traversable.$fTraversableRoseTree1 @ a @ f @ b) -}
+246a16f5ccaa17cdb461dcf5a4c6293e
+  $fTraversable[] :: Traversable.Traversable []
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ []
+                  Functor.$fFunctor[]_$c<$>
+                    `cast`
+                  (Sym (Functor.N:Functor[0] <[]>_N))
+                  Traversable.$fFoldable[]_$cfoldMap
+                    `cast`
+                  (Sym (Traversable.N:Foldable[0] <[]>_N))
+                  Traversable.$fTraversable[]_$ctraverse -}
+8dd49878f419b80821a5705b423a2db4
+  $fTraversable[]1 :: (a -> f b) -> [a] -> f [b]
+  {- Strictness: x -}
+a5d4b7f34dd860b309656d8f93bae8b6
+  $fTraversable[]_$ctraverse ::
+    Applicative.Applicative f => (a -> f b) -> [a] -> f [b]
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ f :: * -> *
+                   @ a
+                   @ b
+                   ($dApplicative :: Applicative.Applicative f) ->
+                 Traversable.$fTraversable[]1 @ a @ f @ b) -}
+a463f19f62ab5287525712912927f23d
+  $tcFoldable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11327842325040338160##
+                   7714463894822399242##
+                   Traversable.$trModule
+                   Traversable.$tcFoldable2
+                   0#
+                   Traversable.$tcFoldable1) -}
+f9365ff4667d45d9a31844e38085446f
+  $tcFoldable1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6f4925ad2642f184293725578275395a
+  $tcFoldable2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Traversable.$tcFoldable3) -}
+91455a48d6778206f3ff90fac8c3eeb0
+  $tcFoldable3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foldable"#) -}
+d838e54defc0e0e9aaa4303d95ba5c2f
+  $tcTraversable :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14692112348567605814##
+                   11034796076537267677##
+                   Traversable.$trModule
+                   Traversable.$trModule1
+                   0#
+                   Traversable.$tcFoldable1) -}
+1300e4e713ee2326ae5a6a823e0a065d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Traversable.$trModule3
+                   Traversable.$trModule1) -}
+5fd1175714f4e2fa939fb1e23419d541
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Traversable.$trModule2) -}
+9d38718d6970d4d2d47a76f0b8be2d13
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Traversable"#) -}
+a93c16b954231fb90047da11d8fefe13
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Traversable.$trModule4) -}
+5380bd9e9792826653b081db2b1bf1fd
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-tutes-0.1.0.0-BNUJnE3XuXS5kv5h66avW4"#) -}
+9fe4616a0f56288f4cd0f6d697cb1240
+  class Foldable (f :: * -> *) where
+    foldMap :: GHC.Base.Monoid m => (a -> m) -> f a -> m
+    {-# MINIMAL foldMap #-}
+246a16f5ccaa17cdb461dcf5a4c6293e
+  class (Functor.Functor t, Traversable.Foldable t) =>
+        Traversable (t :: * -> *) where
+    traverse :: Applicative.Applicative f =>
+                (a -> f b) -> t a -> f (t b)
+    {-# MINIMAL traverse #-}
+instance [safe] Traversable.Foldable [Base.RoseTree]
+  = Traversable.$fFoldableRoseTree
+instance [safe] Traversable.Foldable [[]]
+  = Traversable.$fFoldable[]
+instance [safe] Traversable.Traversable [Base.RoseTree]
+  = Traversable.$fTraversableRoseTree
+instance [safe] Traversable.Traversable [[]]
+  = Traversable.$fTraversable[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

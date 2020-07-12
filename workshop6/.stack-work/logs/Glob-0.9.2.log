@@ -1,0 +1,13 @@
+Configuring Glob-0.9.2...
+clang: warning: argument unused during compilation: '-nopie' [-Wunused-command-line-argument]
+Preprocessing library for Glob-0.9.2..
+Building library for Glob-0.9.2..
+[1 of 7] Compiling System.FilePath.Glob.Utils ( System/FilePath/Glob/Utils.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob/Utils.o )
+[2 of 7] Compiling System.FilePath.Glob.Base ( System/FilePath/Glob/Base.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob/Base.o )
+[3 of 7] Compiling System.FilePath.Glob.Simplify ( System/FilePath/Glob/Simplify.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob/Simplify.o )
+[4 of 7] Compiling System.FilePath.Glob.Primitive ( System/FilePath/Glob/Primitive.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob/Primitive.o )
+[5 of 7] Compiling System.FilePath.Glob.Match ( System/FilePath/Glob/Match.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob/Match.o )
+[6 of 7] Compiling System.FilePath.Glob.Directory ( System/FilePath/Glob/Directory.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob/Directory.o )
+[7 of 7] Compiling System.FilePath.Glob ( System/FilePath/Glob.hs, .stack-work/dist/x86_64-osx/Cabal-2.0.1.0/build/System/FilePath/Glob.o )
+Installing library in /Users/redless/.stack/snapshots/x86_64-osx/lts-11.22/8.2.2/lib/x86_64-osx-ghc-8.2.2/Glob-0.9.2-B0gAg5I1EFbLLrqvbBP6OJ
+Registering library for Glob-0.9.2..

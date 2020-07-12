@@ -1,0 +1,163 @@
+
+==================== FINAL INTERFACE ====================
+2018-09-17 01:05:54.243897 UTC
+
+interface haskell-tutes-0.1.0.0-7TKq6HTn4VZFi18Zn4nbmB:Functor 8022
+  interface hash: f31c407e28ddf623c776fea476cb01a0
+  ABI hash: 546fb84b660a6922feaf2da53d83112c
+  export-list hash: 9a1925fbfbf3fc24ad7109f9188c3d64
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f4578fe61ad65cb1f88a5bbe0bb412f8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Functor.Functor
+module dependencies: Base
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  Base 3a2b43282c6fec09282a5d6aab507fbf
+  exports: 185edd00dc52698b6b2121e95e283db0
+  Id da1dbff0a4b12ef0d4478b87a53e9f80
+  Id c00e45af4b5bc7d349da9f7b1addef73
+  Nil 8dc1c54c71ad78e1459791d67ff60568
+  Node fe2fc5d940839f35d702b7479ec65fcf
+  Pair 5ee1a91fca976831967cf827f1236992
+  Pair 9c6d8724b0d58d81111a5efb51480dba
+  RoseTree 729d81f3958e6390060a769a91cf1af7
+fixities infixl 4 <$>
+556ba3c28be1c59964328688e146ea8e
+  $fFunctorId :: Functor.Functor Base.Id
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Functor.$fFunctorId_$c<$>
+                  `cast`
+                (Sym (Functor.N:Functor[0] <Base.Id>_N)) -}
+7f849ad2fe9d7ea8590b6a11c782cb76
+  $fFunctorId_$c<$> :: (a -> b) -> Base.Id a -> Base.Id b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: Base.Id a) ->
+                 case ds of wild { Base.Id x -> Base.Id @ b (f x) }) -}
+556ba3c28be1c59964328688e146ea8e
+  $fFunctorMaybe :: Functor.Functor GHC.Base.Maybe
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Functor.$fFunctorMaybe_$c<$>
+                  `cast`
+                (Sym (Functor.N:Functor[0] <GHC.Base.Maybe>_N)) -}
+89fbcc44a5c50e92a9cb25beb6d885f5
+  $fFunctorMaybe_$c<$> ::
+    (a -> b) -> GHC.Base.Maybe a -> GHC.Base.Maybe b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*C1(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: GHC.Base.Maybe a) ->
+                 case ds of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ b
+                   GHC.Base.Just x -> GHC.Base.Just @ b (f x) }) -}
+556ba3c28be1c59964328688e146ea8e
+  $fFunctorPair :: Functor.Functor Base.Pair
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U(U,U)>m,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Functor.$fFunctorPair_$c<$>
+                  `cast`
+                (Sym (Functor.N:Functor[0] <Base.Pair>_N)) -}
+c606e4be2ef759bdbedf8a00b2e93a54
+  $fFunctorPair_$c<$> :: (a -> b) -> Base.Pair a -> Base.Pair b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U(U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a @ b (f :: a -> b) (ds :: Base.Pair a) ->
+                 case ds of wild { Base.Pair a1 b1 ->
+                 Base.Pair @ b (f a1) (f b1) }) -}
+556ba3c28be1c59964328688e146ea8e
+  $fFunctorRoseTree :: Functor.Functor Base.RoseTree
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Functor.$fFunctorRoseTree_$c<$>
+                  `cast`
+                (Sym (Functor.N:Functor[0] <Base.RoseTree>_N)) -}
+aa88e4554670f80eb7ffe964ad95870c
+  $fFunctorRoseTree_$c<$> ::
+    (a -> b) -> Base.RoseTree a -> Base.RoseTree b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+556ba3c28be1c59964328688e146ea8e
+  $fFunctor[] :: Functor.Functor []
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Functor.$fFunctor[]_$c<$>
+                  `cast`
+                (Sym (Functor.N:Functor[0] <[]>_N)) -}
+9809b78d725ef305b796085df04fddac
+  $fFunctor[]_$c<$> :: (a -> b) -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+c71e46b4fd08999393f173c840cea36c
+  $tcFunctor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2393386727136050459##
+                   7124072675714989013##
+                   Functor.$trModule
+                   Functor.$tcFunctor2
+                   0#
+                   Functor.$tcFunctor1) -}
+5832a38373d4411f998efdad3f45e103
+  $tcFunctor1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+161ddecd344915b8814552dcf0368d4b
+  $tcFunctor2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Functor.$tcFunctor3) -}
+4a6fa8bf4a145a84f8d2e182ebd26ae8
+  $tcFunctor3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Functor"#) -}
+0b8aadaf38a7c03ff6618938476db373
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Functor.$trModule1
+                   Functor.$tcFunctor2) -}
+0aef479a4c5fba69e5e195f8b59d46a3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Functor.$trModule2) -}
+b7a8c13104493592b8a6429b3d0b6959
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("haskell-tutes-0.1.0.0-7TKq6HTn4VZFi18Zn4nbmB"#) -}
+556ba3c28be1c59964328688e146ea8e
+  class Functor (f :: * -> *) where
+    (<$>) :: (a -> b) -> f a -> f b
+    {-# MINIMAL (<$>) #-}
+instance [safe] Functor.Functor [Base.Id] = Functor.$fFunctorId
+instance [safe] Functor.Functor [GHC.Base.Maybe]
+  = Functor.$fFunctorMaybe
+instance [safe] Functor.Functor [Base.Pair] = Functor.$fFunctorPair
+instance [safe] Functor.Functor [Base.RoseTree]
+  = Functor.$fFunctorRoseTree
+instance [safe] Functor.Functor [[]] = Functor.$fFunctor[]
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
