@@ -1,4 +1,4 @@
-# ohhell, [instructions](https://docs.google.com/document/d/11rwDMXodqlxAjYlOyWvYiwVKjMB7jzeUtDFrYnAkct8/edit?usp=sharing)
+# ohhell [instructions](https://docs.google.com/document/d/11rwDMXodqlxAjYlOyWvYiwVKjMB7jzeUtDFrYnAkct8/edit?usp=sharing)
 
 Please list any files within the repository that you have edited or added here,
 and an overview of your work here.
